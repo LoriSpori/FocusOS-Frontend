@@ -81,14 +81,19 @@ export default function App() {
       <nav className="nav-shell" aria-label="Main navigation">
         <Logo header />
         <div className="nav-links">
-          <a href="#how-it-works">How it works</a>
-          <a href="#reminders">Reminders</a>
-          <a href="#the-why">The why</a>
+          <a href="#focus-session">Focus session</a>
+          <a href="#features">Features</a>
+          <a href="#about">about</a>
           <a href="/dashboard">Dashboard</a>
         </div>
-        <a className="button button-dark button-small" href="#early-access">
-          Get Focus OS <ArrowIcon />
-        </a>
+        <div className="nav-actions">
+          <a className="button button-light button-small" href="#early-access">
+            Sign Up
+          </a>
+          <a className="button button-dark button-small" href="/dashboard">
+            Log In
+          </a>
+        </div>
       </nav>
 
       <section className="hero">
@@ -107,7 +112,7 @@ export default function App() {
               Download Focus OS
               <ArrowIcon />
             </a>
-            <a className="text-link" href="#how-it-works">
+            <a className="text-link" href="#focus-session">
               See how it works <span>↓</span>
             </a>
           </div>
@@ -128,15 +133,14 @@ export default function App() {
         <span>VOICE FEEDBACK</span>
         <i>✦</i>
         <span>REMINDERS</span>
-        <i>✦</i>
       </div>
 
-      <section className="how-section" id="how-it-works">
+      <section className="how-section" id="focus-session">
         <div className="section-heading">
           <div>
-            <span className="section-kicker">HOW IT WORKS / 001</span>
+            <span className="section-kicker">FOCUS SESSION / 001</span>
             <div className="section-title" role="heading" aria-level={2}>
-              Your own session dashboard
+              Your Productivity Dashboard
             </div>
           </div>
           <p>lorem ipsum dolor sit amet consectetuer adipiscing elit</p>
@@ -157,11 +161,11 @@ export default function App() {
         </div>
       </section>
 
-      <section className="intervention-section" id="reminders">
+      <section className="intervention-section" id="features">
         <div className="intervention-copy">
-          <span className="section-kicker light">Reminders / 002</span>
+          <span className="section-kicker light">Features / 002</span>
           <div className="section-title light-title" role="heading" aria-level={2}>
-            lorem ipsum
+            How It Works
           </div>
           <p>lorem ipsum dolor sit amet consectetuer adipiscing elit</p>
           <div className="quote-chip">
@@ -202,18 +206,18 @@ export default function App() {
         </div>
       </section>
 
-      <section className="the-why-section" id="the-why">
-        <div className="the-why-lock">
+      <section className="about-section" id="about">
+        <div className="about-lock">
           <LockIcon />
         </div>
-        <div className="the-why-copy">
-          <span className="section-kicker">{" The why / 003"}</span>
+        <div className="about-copy">
+          <span className="section-kicker">{" About / 003"}</span>
           <div className="section-title" role="heading" aria-level={2}>
-            lorem ipsum
+            Why Focus OS?
           </div>
           <p>lorem ipsum dolor sit amet consectetuer adipiscing elit</p>
         </div>
-        <div className="the-why-list">
+        <div className="about-list">
           <div>
             <span>01</span>
             <strong>lorem ipsum</strong>
@@ -247,9 +251,7 @@ export default function App() {
         <Logo />
         <p>lorem ipsum dolor sit amet consectetuer adipiscing elit</p>
         <div className="footer-links">
-          <a href="#the-why">The Why</a>
-          <a href="mailto:hello@focusos.app">Contact</a>
-          <span>© 2026 FOCUS OS</span>
+          <span>© 2026 Focus OS, All rights reserved.</span>
         </div>
       </footer>
     </main>

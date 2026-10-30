@@ -121,6 +121,11 @@ main {
   border-color: var(--ink);
 }
 
+.nav-actions {
+  display: flex;
+  gap: 0.75rem;
+}
+
 .button {
   align-items: center;
   border: 1px solid var(--ink);
@@ -708,7 +713,7 @@ main {
 }
 
 .section-heading p,
-.the-why-copy p {
+.about-copy p {
   color: var(--muted);
   line-height: 1.7;
   margin: 0;
@@ -910,7 +915,7 @@ main {
   font-size: 0.55rem;
 }
 
-.the-why-section {
+.about-section {
   align-items: center;
   display: grid;
   gap: 4rem;
@@ -918,7 +923,7 @@ main {
   padding: 8rem 6vw;
 }
 
-.the-why-lock {
+.about-lock {
   align-items: center;
   background-color: rgb(0, 46, 200);
   border-radius: 50%;
@@ -928,16 +933,16 @@ main {
   width: 8rem;
 }
 
-.the-why-lock svg {
+.about-lock svg {
   height: 3rem;
   width: 3rem;
 }
 
-.the-why-list {
+.about-list {
   border-top: 1px solid var(--line);
 }
 
-.the-why-list div {
+.about-list div {
   align-items: center;
   border-bottom: 1px solid var(--line);
   display: flex;
@@ -945,13 +950,13 @@ main {
   padding: 1.2rem 0;
 }
 
-.the-why-list span {
+.about-list span {
   font-family: "DM Mono", monospace;
   font-size: 0.6rem;
   opacity: 0.5;
 }
 
-.the-why-list strong {
+.about-list strong {
   font-size: 0.9rem;
 }
 
@@ -1066,7 +1071,7 @@ footer .logo-mark span::after {
 .dashboard-period span,
 .live-status,
 .sidebar-label,
-.the-why-note span,
+.about-note span,
 .metric-label,
 .panel-count,
 .table-head,
@@ -1170,24 +1175,24 @@ footer .logo-mark span::after {
   color: var(--white);
 }
 
-.the-why-note {
+.about-note {
   background: var(--acid);
   border: 1px solid var(--ink);
   padding: 1.15rem;
 }
 
-.the-why-note span {
+.about-note span {
   display: block;
   margin-bottom: 1rem;
 }
 
-.the-why-note strong {
+.about-note strong {
   display: block;
   font-size: 0.75rem;
   line-height: 1.35;
 }
 
-.the-why-note p {
+.about-note p {
   font-size: 0.65rem;
   line-height: 1.5;
   margin: 0.6rem 0 0;
@@ -1633,11 +1638,11 @@ footer .logo-mark span::after {
     grid-template-columns: 1fr;
   }
 
-  .the-why-section {
+  .about-section {
     grid-template-columns: auto 1fr;
   }
 
-  .the-why-list {
+  .about-list {
     grid-column: 2;
   }
 
@@ -1672,14 +1677,14 @@ footer .logo-mark span::after {
     width: 1.25rem;
   }
 
-  .the-why-note {
+  .about-note {
     display: none;
   }
 }
 
 @media (max-width: 720px) {
   .nav-links,
-  .nav-shell > .button {
+  .nav-actions {
     display: none;
   }
 
@@ -1724,7 +1729,7 @@ footer .logo-mark span::after {
 
   .how-section,
   .intervention-section,
-  .the-why-section {
+  .about-section {
     padding: 5rem 1.25rem;
   }
 
@@ -1751,18 +1756,18 @@ footer .logo-mark span::after {
     font-size: 0.67rem;
   }
 
-  .the-why-section {
+  .about-section {
     align-items: start;
     gap: 2.5rem;
     grid-template-columns: 1fr;
   }
 
-  .the-why-lock {
+  .about-lock {
     height: 5rem;
     width: 5rem;
   }
 
-  .the-why-list {
+  .about-list {
     grid-column: 1;
     width: 100%;
   }

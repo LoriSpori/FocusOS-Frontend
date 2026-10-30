@@ -146,7 +146,7 @@ export default function Dashboard() {
         <section className="dashboard-content">
           <div className="dashboard-heading">
             <div>
-              <span className="section-kicker">TODAY / LIVE VIEW</span>
+              <span className="section-kicker">TODAY</span>
               <div className="dashboard-title" role="heading" aria-level={1}>
                 Your dashboard
               </div>
